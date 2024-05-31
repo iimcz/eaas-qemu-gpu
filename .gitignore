@@ -1,0 +1,2 @@
+# Do not upload Blackmagic SDK/Drivers to the repo
+thirdparty/Blackmagic*

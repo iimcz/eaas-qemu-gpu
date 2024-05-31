@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:emulationEnvironmentTemplate xmlns:ns2="http://bwfla.bwl.de/common/datatypes">
+    <ns2:id>runtime</ns2:id>
+    <ns2:description>
+        <ns2:title>Generic Runtime</ns2:title>
+    </ns2:description>
+    <ns2:metaDataVersion>1</ns2:metaDataVersion>
+    <ns2:arch>x86_64</ns2:arch>
+    <ns2:model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:emulator bean="GpuQemu"/>
+    <ns2:ui_options>
+        <ns2:html5>
+            <ns2:pointer_lock>false</ns2:pointer_lock>
+            <ns2:crt></ns2:crt>
+        </ns2:html5>
+        <ns2:input required="false">
+            <ns2:clientKbdLayout>us</ns2:clientKbdLayout>
+        </ns2:input>
+    </ns2:ui_options>
+    <ns2:checkpointBindingId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:operatingSystemId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:isLinuxRuntime>true</ns2:isLinuxRuntime>
+
+    <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:unit>0</ns2:unit>
+	<ns2:type>floppy</ns2:type>
+	<ns2:boot>false</ns2:boot>
+	<ns2:filesystem>fat12</ns2:filesystem>
+    </ns2:drive>
+    <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:unit>1</ns2:unit>
+	<ns2:type>floppy</ns2:type>
+	<ns2:boot>false</ns2:boot>
+	<ns2:filesystem>fat12</ns2:filesystem>
+    </ns2:drive>
+
+    <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:iface>ide</ns2:iface>
+        <ns2:bus>0</ns2:bus>
+        <ns2:unit>0</ns2:unit>
+        <ns2:type>disk</ns2:type>
+        <ns2:boot>true</ns2:boot>
+    </ns2:drive>
+    <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:iface>ide</ns2:iface>
+        <ns2:bus>0</ns2:bus>
+        <ns2:unit>1</ns2:unit>
+        <ns2:type>cdrom</ns2:type>
+        <ns2:filesystem>ISO</ns2:filesystem>
+        <ns2:boot>false</ns2:boot>
+    </ns2:drive>
+     <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:iface>ide</ns2:iface>
+        <ns2:bus>1</ns2:bus>
+        <ns2:unit>0</ns2:unit>
+        <ns2:type>disk</ns2:type>
+        <ns2:boot>false</ns2:boot>
+    </ns2:drive>
+    <ns2:drive>
+        <ns2:data></ns2:data>
+        <ns2:iface>ide</ns2:iface>
+        <ns2:bus>1</ns2:bus>
+        <ns2:unit>1</ns2:unit>
+        <ns2:type>disk</ns2:type>
+        <ns2:boot>false</ns2:boot>
+    </ns2:drive>
+
+</ns2:emulationEnvironmentTemplate>
