@@ -1,5 +1,6 @@
 FROM registry.gitlab.com/emulation-as-a-service/emulators/emulators-base
 
+LABEL "org.opencontainers.image.source"="https://github.com/iimcz/eaas-qemu-gpu"
 LABEL "EAAS_EMULATOR_TYPE"="gpu-qemu-system"
 LABEL "EAAS_EMULATOR_VERSION"="v0.1"
 
