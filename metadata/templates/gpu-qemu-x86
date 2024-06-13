@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:emulationEnvironmentTemplate xmlns:ns2="http://bwfla.bwl.de/common/datatypes">
-    <ns2:id>gpu-qemu-x86</ns2:id>
+    <ns2:id>qemu-gpu-x86</ns2:id>
     <ns2:description>
         <ns2:title>Generic QEMU x86 Template for GPU HW passthrough</ns2:title>
     </ns2:description>
     <ns2:metaDataVersion>1</ns2:metaDataVersion>
     <ns2:arch>x86_64</ns2:arch>
     <ns2:model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <ns2:emulator bean="GpuQemu"/>
+    <ns2:emulator bean="QemuGpu"/>
     <ns2:ui_options>
         <ns2:html5>
             <ns2:pointer_lock>false</ns2:pointer_lock>
