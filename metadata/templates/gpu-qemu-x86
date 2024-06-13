@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:emulationEnvironmentTemplate xmlns:ns2="http://bwfla.bwl.de/common/datatypes">
-    <ns2:id>runtime</ns2:id>
+    <ns2:id>gpu-qemu-x86</ns2:id>
     <ns2:description>
-        <ns2:title>Generic Runtime</ns2:title>
+        <ns2:title>Generic QEMU x86 Template for GPU HW passthrough</ns2:title>
     </ns2:description>
     <ns2:metaDataVersion>1</ns2:metaDataVersion>
     <ns2:arch>x86_64</ns2:arch>
@@ -17,9 +17,7 @@
             <ns2:clientKbdLayout>us</ns2:clientKbdLayout>
         </ns2:input>
     </ns2:ui_options>
-    <ns2:checkpointBindingId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <ns2:operatingSystemId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <ns2:isLinuxRuntime>true</ns2:isLinuxRuntime>
+    <ns2:operatingSystemId>Q357951</ns2:operatingSystemId>
 
     <ns2:drive>
         <ns2:data></ns2:data>
@@ -66,7 +64,8 @@
         <ns2:iface>ide</ns2:iface>
         <ns2:bus>1</ns2:bus>
         <ns2:unit>1</ns2:unit>
-        <ns2:type>disk</ns2:type>
+        <ns2:type>cdrom</ns2:type>
+        <ns2:filesystem>ISO</ns2:filesystem>
         <ns2:boot>false</ns2:boot>
     </ns2:drive>
 
